@@ -1,6 +1,6 @@
 This is an experiment to measure the overhead of CGO calls. In particular it measures the difference in performance between standard CGO calls, and batched ones (e.g. make one CGO call that calls five C functions).
 
-See discussion at azul3d/issues#17
+See discussion at https://github.com/azul3d/issues/issues/17
 
 # Arguments
 
