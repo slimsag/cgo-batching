@@ -1,5 +1,7 @@
 This is an experiment to measure the overhead of CGO calls. In particular it measures the difference in performance between standard CGO calls, and batched ones (e.g. make one CGO call that calls five C functions).
 
+See discussion at azul3d/issues#17
+
 # Arguments
 
 First, we can measure the cost of pushing arguments onto a stack which could have some copy overhead. Note that in this test CGO calls are still passing zero arguments (only batching is actually passing arguments) so with-CGO timings are not useful here:
